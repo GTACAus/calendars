@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gladys Murphy's April Calendar</title>
+<style>
+  body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4; 
+    color: #333;
+  }
+  table { 
+    width: 60%; 
+    margin: auto;
+    border-collapse: collapse; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    border-radius: 10px;
+  }
+  th, td { 
+    width: 14%; 
+    height: 100px; 
+    padding: 8px; 
+    text-align: center; 
+    border: 1px solid #ccc; 
+    vertical-align: middle;
+  }
+  th {
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .blue { background-color: #ADD8E6; }
+  .green { background-color: #90EE90; }
+  .yellow { background-color: #FFFF99; }
+  .red { background-color: #F08080; }
+  .date { font-size: 16px; font-weight: bold; display: block; }
+  .event { font-size: 14px; display: block; margin-top: 5px; }
+  .time { font-size: 14px; display: block; }
+  .key { 
+    width: 60%;
+    margin: 20px auto; 
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 10px; 
+    background-color: #fff; 
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  .key div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+  }
+  .key span { margin-left: 5px; }
+  .button {
+    padding: 10px 20px;
+    background-color: #dddddd;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    width: auto;
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<h2 style="text-align: center;">Gladys Murphy's Calendar - April 2025</h2>
+<table>
+  <tr>
+    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td class="blue"><span class="date">1</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span></td>
+    <td class="red"><span class="date">2</span><span class="event">Unconfirmed</span></td>
+    <td class="blue"><span class="date">3</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span></td>
+    <td class="yellow"><span class="date">4</span><span class="event">Protest Planning</span><span class="time">10 AM - 3 PM</span></td>
+    <td class="blue"><span class="date">5</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span></td>
+    <td class="green"><span class="date">6</span><span class="event">Community Meeting</span><span class="time">4 PM - 6 PM</span></td>
+  </tr>
+  <tr>
+    <td class="yellow"><span class="date">7</span><span class="event">Workshop on Small Business Laws</span><span class="time">9 AM - 12 PM</span></td>
+    <td class="green"><span class="date">8</span><span class="event">Local Park Maintenance</span><span class="time">8 AM - 12 PM</span></td>
+    <td class="yellow"><span class="date">9</span><span class="event">Advocacy Workshop</span><span class="time">1 PM - 3 PM</span></td>
+    <td class="blue"><span class="date">10</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span></td>
+    <td class="blue"><span class="date">11</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span><span class="event">Protest at Melbourne City Hall</span><span class="time">10 AM - 2 PM</span></td>
+    <td class="red"><span class="date">12</span><span class="event">Unconfirmed</span></td>
+    <td class="blue"><span class="date">13</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span></td>
+  </tr>
+  <tr>
+    <td class="yellow"><span class="date">14</span><span class="event">Media Interview about Small Business Regulation</span><span class="time">10 AM - 11 AM</span></td>
+    <td class="blue"><span class="date">15</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span></td>
+    <td class="red"><span class="date">16</span><span class="event">Community Forum</span><span class="time">5 PM - 7 PM</span></td>
+    <td class="yellow"><span class="date">17</span><span class="event">Newsletter Preparation</span><span class="time">12 PM - 5 PM</span></td>
+    <td class="yellow"><span class="date">18</span><span class="event">SmallBiz Event Preparations</span><span class="time">9 AM - 4 PM</span></td>
+    <td class="red"><span class="date">19</span><span class="event">Unconfirmed</span></td>
+    <td class="blue"><span class="date">20</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span><span class="event">Article Writing for Business Magazine</span><span class="time">9 AM - 1 PM</span></td>
+  </tr>
+  <tr>
+    <td class="red"><span class="date">21</span><span class="event">Unconfirmed</span></td>
+    <td class="yellow"><span class="date">22</span><span class="event">Follow-up Meetings Post Event</span><span class="time">9 AM - 12 PM</span></td>
+    <td class="red"><span class="date">23</span><span class="event">Unconfirmed</span></td>
+    <td class="yellow"><span class="date">24</span><span class="event">Panel Discussion on Business Sustainability</span><span class="time">2 PM - 5 PM</span></td>
+    <td class="blue"><span class="date">25</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span></td>
+    <td class="red"><span class="date">26</span><span class="event">Unconfirmed</span></td>
+    <td class="green"><span class="date">27</span><span class="event">SmallBiz event</span><span class="time">8 AM - 5 PM</span></td>
+  </tr>
+  <tr>
+    <td class="green"><span class="date">28</span><span class="event">SmallBiz event</span><span class="time">8 AM - 5 PM</span></td>
+    <td class="blue"><span class="date">29</span><span class="event">Farm Work</span><span class="time">7 AM - 5 PM</span></td>
+    <td class="yellow"><span class="date">30</span><span class="event">Protest Evaluation Meeting</span><span class="time">9 AM - 11 AM</span></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+</table>
+<div class="key">
+  <div class="blue"><span>🟦</span> Regular activism and planning days</div>
+  <div class="green"><span>🟩</span> Environmental activities and community events</div>
+  <div class="yellow"><span>🟨</span> Community events and meetings</div>
+  <div class="red"><span>🟥</span> Unconfirmed activities or travel days</div>
+</div>
+<div class="button-container">
+  <a href="Angelo.html" class="button">Angelo Hart's Calendar</a>
+  <a href="shadiya.html" class="button">Shadiyah Hobbs' Calendar</a>
+  <a href="Eve.html" class="button">Eve Haddad's Calendar</a>
+  <a href="harley.html" class="button">Harley Macias' Calendar</a>
+  <a href="Angus.html" class="button">Angus Neal's Calendar</a>
+</div>
+<div class="clear"></div>
+</body>
+</html>
