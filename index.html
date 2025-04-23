@@ -41,6 +41,17 @@
     object-fit: cover;               /* Ensure the image fills the space nicely */
     box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow for depth */
   }
+  .gtac-logo {
+    position: fixed;            /* Keeps the logo in place when scrolling */
+    top: 10px;                  /* Distance from the top of the page */
+    right: 10px;                /* Distance from the right edge */
+    width: 80px;                /* Adjust size as needed */
+    height: auto;               /* Keep aspect ratio */
+    border-radius: 10px;        /* Optional: soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: shadow for depth */
+    z-index: 1000;              /* Makes sure it stays on top of other elements */
+  }
+
 
 
   /* Responsive adjustments for smaller screens */
@@ -59,6 +70,7 @@
 </style>
 </head>
 <body>
+<img src="gtac-logo.png" alt="GTAC Logo" class="gtac-logo">
 <img src="cycle.png" alt="Background Image" class="fullscreen">
 <div class="button-container">
   <a href="Angus.html" class="button">Angus Neal's Calendar</a>
