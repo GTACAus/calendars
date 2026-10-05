@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suspect Alibi Calendars</title>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  body { 
+    font-family: 'Figtree', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+  }
+  .button {
+    padding: 5px 10px; /* Reduced padding for a slimmer look */
+    background-color: #dddddd;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    display: block; /* Changed from flex to block for button */
+    width: calc(33.33% - 20px); /* Fine-tuned width calculation */
+    margin: 5px; /* Adjusted margin for precise spacing */
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-size: 16px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: space-between; /* Adjusted for even spacing */
+    padding: 10px;
+  }
+  img.fullscreen {
+    display: block;                  /* Ensure the image is a block-level element */
+    margin: 20px auto;               /* Center the image horizontally and add vertical spacing */
+    width: 80%;                      /* Adjust width responsively */
+    max-width: 600px;                /* Prevent it from becoming too large */
+    height: auto;                    /* Maintain aspect ratio */
+    border-radius: 20px;             /* Rounded corners */
+    object-fit: cover;               /* Ensure the image fills the space nicely */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow for depth */
+  }
+  .gtac-logo {
+    position: fixed;            /* Keeps the logo in place when scrolling */
+    top: 10px;                  /* Distance from the top of the page */
+    right: 10px;                /* Distance from the right edge */
+    width: 80px;                /* Adjust size as needed */
+    height: auto;               /* Keep aspect ratio */
+    border-radius: 10px;        /* Optional: soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: shadow for depth */
+    z-index: 1000;              /* Makes sure it stays on top of other elements */
+  }
+
+
+
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .button {
+      width: calc(50% - 20px); /* Two buttons per row */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .button {
+      width: 100%; /* One button per row */
+      margin: 5px 0;
+    }
+  }
+</style>
+</head>
+<body>
+<img src="GTAC.PNG" alt="GTAC Logo" class="gtac-logo">
+<img src="cycle.png" alt="Background Image" class="fullscreen">
+<div class="button-container">
+  <a href="Angus.html" class="button">Angus Neal's Calendar</a>
+  <a href="Eve.html" class="button">Eve Haddad's Calendar</a>
+  <a href="Angelo.html" class="button">Angelo Hart's Calendar</a>
+  <a href="harley.html" class="button">Harley Macias' Calendar</a>
+  <a href="shadiya.html" class="button">Shadiyah Hobbs' Calendar</a>
+  <a href="Gladys.html" class="button">Gladys Murphy's Calendar</a>
+</div>
+</body>
+</html>
